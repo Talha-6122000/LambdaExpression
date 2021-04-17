@@ -19,3 +19,12 @@ def splicer(mystring):
 mynames = ['John','Cindy','Sarah','Kelly','Mike']
 s=list(map(splicer,mynames))
 print(s)
+# There's another function called filter
+# What does it do is filter thing and return true or false
+def check_even(my_numss):
+  if(my_numss)%2==0:
+    return my_numss % 2 == 0 
+nums = [0,1,2,3,4,5,6,7,8,9,10]
+num_filter=list(filter(check_even,nums))
+for i in num_filter:
+  print(i)
