@@ -10,4 +10,12 @@ for item in map(square,my_list):
 x=list(map(square,my_list))
 for item in x:
   print(item)
-   
+# Let's do something else
+def splicer(mystring):
+    if len(mystring) % 2 == 0:
+        return 'even'
+    else:
+        return mystring[0]
+mynames = ['John','Cindy','Sarah','Kelly','Mike']
+s=list(map(splicer,mynames))
+print(s)
